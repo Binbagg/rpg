@@ -11,8 +11,6 @@ import time
 #CURRENT PROBLEMS, CHARACTERBASE IS USED TO GENERATE ENEMIES, BUT THAT MEANS ENEMIES 
 #CAN HAVE statusCheck(self), THIS COULD BE USED FOR A COOL SPELL THOUGH
 
-#this really is what OOP is about
-      
 #class to do: InventoryManager, defs: drop, add, equip, sort, list
 #cool idea, if every characterbase has a inventory then we can add a steal function
 
@@ -489,56 +487,3 @@ while gameStarted:
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-"""
-def battle():
-  global battleStarted  #CODE FOR OFFBEAT TO REVISE FROM
-  enemy = CharacterBase(health=100,name="Goblin",strength=5)
-
-  while battleStarted:
-    print(f"You are fighting a {enemy.name} with {enemy.health} health")
-    print(f"You have {player.health} health")
-    print("What do you do?")
-    print("1. Attack")
-    print("2. Nothing")
-    print("3. Status")
-
-    choice = input(": ")
-    if choice == "1":
-      player.attack(enemy)
-
-      if enemy.health <= 0:
-        print("You win!")
-        battleStarted = False
-        break
-      else:
-        enemy.attack(player)
-
-    elif choice == "2":
-      enemy.attack(player)
-    elif choice == "3":
-      clear()
-      player.statusCheck()
-      input("Enter to continue")
-
-    else:
-      print("Invalid choice")
-      continue
-    if player.health <= 0:
-
-        print("You lose!")
-        quit()
-    clear()
-"""
